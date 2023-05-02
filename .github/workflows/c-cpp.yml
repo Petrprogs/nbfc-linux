@@ -33,6 +33,6 @@ jobs:
         # Package dependencies.
         depends: ""# optional, default is none
         # Package architecture.
-        arch: ""# optional, default is amd64
+        arch: "amd64"# optional, default is amd64
         # Package description.
-        desc: ""# optional, default is no description
+        desc: "Notebook Fan Control - app for controlling fan on most of the notebooks"# optional, default is no description

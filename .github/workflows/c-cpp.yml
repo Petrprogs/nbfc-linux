@@ -15,7 +15,24 @@ jobs:
     - uses: actions/checkout@v3
     - name: make
       run: make
-    - name: github-action-build
-      uses: skx/github-action-build@release-0.6.1
+    - name: build-debs-dpkg
+  # You may pin to the exact commit or the version.
+  # uses: shumailaahmed/build-deb-action@11058815a9e1bb20262bcd64df40df074825a77c
+      uses: shumailaahmed/build-deb-action@v1.0.2
       with:
-        builder: .github/build
+        # Package name of debian package.
+        package: "nbfc-linux"
+        # Directory of release files.
+        package_root: "./"
+        # Package maintainer name.
+        maintainer: "NBFC"
+        # Package version.
+        version: "1.0.0"
+        # Package installed size. GitHub Actions set summarized byte size of `package_root` directory when this parameter is empty.
+        installed_size: "" # optional, default is 
+        # Package dependencies.
+        depends: ""# optional, default is none
+        # Package architecture.
+        arch: ""# optional, default is amd64
+        # Package description.
+        desc: ""# optional, default is no description

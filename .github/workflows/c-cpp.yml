@@ -37,6 +37,6 @@ jobs:
         # Package description.
         desc: "Notebook Fan Control - app for controlling fan on most of the notebooks"# optional, default is no description
     - name: Release the Package
-      uses: petrprogs/nbfc-linux@v1
+      uses: petrprogs/nbfc-linux@1
       with:
-         files: package.deb
+         files: nbfc-linux_1.0.0_.deb

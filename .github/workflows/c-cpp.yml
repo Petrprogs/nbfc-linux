@@ -31,7 +31,7 @@ jobs:
         # Package installed size. GitHub Actions set summarized byte size of `package_root` directory when this parameter is empty.
         installed_size: "" # optional, default is 
         # Package dependencies.
-        depends: ""# optional, default is none
+        depends: "lm-sensors"# optional, default is none
         # Package architecture.
         arch: "amd64"# optional, default is amd64
         # Package description.

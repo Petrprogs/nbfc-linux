@@ -36,6 +36,7 @@ jobs:
         arch: "amd64"# optional, default is amd64
         # Package description.
         desc: "Notebook Fan Control - app for controlling fan on most of the notebooks"# optional, default is no description
+    - uses: actions/checkout@v3
     - name: Release the Package
       uses: petrprogs/nbfc-linux@1
       with:
